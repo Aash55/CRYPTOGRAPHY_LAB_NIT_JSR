@@ -1,3 +1,11 @@
+def gcd_euclidean(a, b):
+    """Computes the greatest common divisor (GCD) of a and b using an Euclidean algorithm.
+    """
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+
 def multiplicative_cipher(text, key, mode='encrypt'):
     result = ""
     for char in text.upper():
@@ -14,7 +22,8 @@ def multiplicative_cipher(text, key, mode='encrypt'):
 
 # Example Usage
 plaintext = "CRYPTO"
-key = 9  # A key coprime to 26
+key = 9
+
 encrypted_text = multiplicative_cipher(plaintext, key, 'encrypt')
 decrypted_text = multiplicative_cipher(encrypted_text, key, 'decrypt')
 

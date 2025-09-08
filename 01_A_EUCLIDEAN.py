@@ -1,6 +1,5 @@
 def gcd_euclidean(a, b):
-    """
-    Computes the greatest common divisor (GCD) of a and b using an Euclidean algorithm.
+    """Computes the greatest common divisor (GCD) of a and b using an Euclidean algorithm.
     """
     while b != 0:
         a, b = b, a % b
