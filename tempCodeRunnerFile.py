@@ -1,0 +1,1 @@
+ print(lm, etam, cm)
